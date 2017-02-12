@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T5D-Gn-FVk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DojOLX" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conjectura de Collatz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pst-LK-q66">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="a55-am-z8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O número com a maior sequência entre 1 e 1000 é 129 e a maior sequência tem 112 números" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-WX-pbp">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FM-N2-7yy">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="a7R-o4-8o9"/>
+                                    <constraint firstAttribute="height" constant="30" id="qT9-BV-21X"/>
+                                </constraints>
+                                <state key="normal" title="Show result"/>
+                                <connections>
+                                    <action selector="btnShowResultTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sju-6P-WJ6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqb-Qv-g2g">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="1KP-8L-v8j"/>
+                                    <constraint firstAttribute="height" constant="30" id="4Nc-ZI-272"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pst-LK-q66" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8aN-4a-lHA"/>
+                            <constraint firstItem="cLo-WX-pbp" firstAttribute="top" secondItem="5FM-N2-7yy" secondAttribute="bottom" constant="30" id="GdR-Se-wmB"/>
+                            <constraint firstItem="5FM-N2-7yy" firstAttribute="top" secondItem="zqb-Qv-g2g" secondAttribute="bottom" constant="8" id="K3f-do-HeB"/>
+                            <constraint firstItem="5FM-N2-7yy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KaQ-fb-4md"/>
+                            <constraint firstItem="zqb-Qv-g2g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QkS-Aa-R9j"/>
+                            <constraint firstItem="cLo-WX-pbp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZdN-XA-Du7"/>
+                            <constraint firstItem="zqb-Qv-g2g" firstAttribute="top" secondItem="pst-LK-q66" secondAttribute="bottom" constant="30" id="b84-cS-dxN"/>
+                            <constraint firstItem="pst-LK-q66" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="cEo-UN-ruo"/>
+                            <constraint firstItem="cLo-WX-pbp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dlZ-Gg-vAh"/>
+                            <constraint firstItem="pst-LK-q66" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qnh-SD-F5k"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qvE-G5-6JG"/>
+                    <connections>
+                        <outlet property="edtNumber" destination="zqb-Qv-g2g" id="Rew-pK-NUu"/>
+                        <outlet property="lblResult" destination="cLo-WX-pbp" id="qEr-yM-et2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="-559.07046476761627"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Egv-i4-Czg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5D-Gn-FVk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vhr-zJ-G4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tvc-oJ-1tU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXb-sk-Cvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="-559.07046476761627"/>
         </scene>
     </scenes>
 </document>

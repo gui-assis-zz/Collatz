@@ -13,6 +13,9 @@
 		9C5E75561E50E691000BF889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E75551E50E691000BF889 /* Assets.xcassets */; };
 		9C5E75591E50E691000BF889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E75571E50E691000BF889 /* LaunchScreen.storyboard */; };
 		9C5E75641E50E692000BF889 /* DojOLXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E75631E50E692000BF889 /* DojOLXTests.swift */; };
+		9C5E756F1E50E6ED000BF889 /* Collatz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E756E1E50E6ED000BF889 /* Collatz.swift */; };
+		9C5E75711E50E71F000BF889 /* CollatzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E75701E50E71F000BF889 /* CollatzTest.swift */; };
+		9C5E75721E50E736000BF889 /* Collatz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E756E1E50E6ED000BF889 /* Collatz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 		9C5E755F1E50E692000BF889 /* DojOLXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DojOLXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E75631E50E692000BF889 /* DojOLXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DojOLXTests.swift; sourceTree = "<group>"; };
 		9C5E75651E50E692000BF889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5E756E1E50E6ED000BF889 /* Collatz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collatz.swift; sourceTree = "<group>"; };
+		9C5E75701E50E71F000BF889 /* CollatzTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollatzTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 				9C5E75551E50E691000BF889 /* Assets.xcassets */,
 				9C5E75571E50E691000BF889 /* LaunchScreen.storyboard */,
 				9C5E755A1E50E691000BF889 /* Info.plist */,
+				9C5E756E1E50E6ED000BF889 /* Collatz.swift */,
 			);
 			path = DojOLX;
 			sourceTree = "<group>";
@@ -92,6 +98,7 @@
 			children = (
 				9C5E75631E50E692000BF889 /* DojOLXTests.swift */,
 				9C5E75651E50E692000BF889 /* Info.plist */,
+				9C5E75701E50E71F000BF889 /* CollatzTest.swift */,
 			);
 			path = DojOLXTests;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5E756F1E50E6ED000BF889 /* Collatz.swift in Sources */,
 				9C5E75511E50E691000BF889 /* ViewController.swift in Sources */,
 				9C5E754F1E50E691000BF889 /* AppDelegate.swift in Sources */,
 			);
@@ -210,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5E75721E50E736000BF889 /* Collatz.swift in Sources */,
 				9C5E75641E50E692000BF889 /* DojOLXTests.swift in Sources */,
+				9C5E75711E50E71F000BF889 /* CollatzTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
