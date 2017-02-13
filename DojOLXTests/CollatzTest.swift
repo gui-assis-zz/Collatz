@@ -28,7 +28,7 @@ class CollatzTest: XCTestCase {
     func testPerformanceTo1000() {
         // The performance should be less than 1.130 sec
         self.measure {
-            Collatz.sequence(to: 1000)
+            Collatz.sequence(number: 1000)
         }
     }
 }
